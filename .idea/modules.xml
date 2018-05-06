@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Chapter10_SprintBoot/Chapter10_SprintBoot.iml" filepath="$PROJECT_DIR$/Chapter10_SprintBoot/Chapter10_SprintBoot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter10_springboot/Chapter10_springboot.iml" filepath="$PROJECT_DIR$/Chapter10_springboot/Chapter10_springboot.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter5_TestNG/Chapter5_TestNG.iml" filepath="$PROJECT_DIR$/Chapter5_TestNG/Chapter5_TestNG.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter6_ExtentReport/Chapter6_ExtentReport.iml" filepath="$PROJECT_DIR$/Chapter6_ExtentReport/Chapter6_ExtentReport.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter7_Moco/Chapter7_Moco.iml" filepath="$PROJECT_DIR$/Chapter7_Moco/Chapter7_Moco.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter9_Httpclient/Chapter9_Httpclient.iml" filepath="$PROJECT_DIR$/Chapter9_Httpclient/Chapter9_Httpclient.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Chapter6_extentreport/Chapter9_extentreport.iml" filepath="$PROJECT_DIR$/Chapter6_extentreport/Chapter9_extentreport.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter9_extentreport/Chapter9_extentreport.iml" filepath="$PROJECT_DIR$/Chapter9_extentreport/Chapter9_extentreport.iml" />
       <module fileurl="file://$PROJECT_DIR$/InterfaceDemo.iml" filepath="$PROJECT_DIR$/InterfaceDemo.iml" />
     </modules>
   </component>
