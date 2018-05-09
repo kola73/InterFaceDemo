@@ -21,7 +21,7 @@ public class MyGetMethod {
     public String getCookies(HttpServletResponse response) {
 //    HttpServerletRequest 装请求信息的类
 //    HttpServerletResponse  装响应信息的类
-//        获取cookies
+//        设置cookies
         Cookie cookie = new Cookie("login", "true");
 //        添加cookies
         response.addCookie(cookie);
