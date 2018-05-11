@@ -2,11 +2,14 @@ package com.imooc.server;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Objects;
 
 /*
@@ -48,4 +51,22 @@ public class MyGetMethod {
         }
         return "你必须携带cookies信息来";
     }
+
+    /*
+    开发一个需要携带参数才能访问的get请求
+    第一种实现方式：url:key=valeu & key=value
+    我们来模拟获取商品列表接口
+     */
+    @RequestMapping(value = "/get/with/param", method = RequestMethod.GET)
+//   获取开始位置，结束位置
+    public Map<String, Integer> getList(@RequestParam Integer start, @RequestParam Integer end) {
+//        商品列表
+        Map<String, Integer> myList = new HashMap<>();
+//        放入商品
+        myList.put("铅笔", 1);
+        myList.put("橡皮擦", 2);
+        myList.put("苹果", 3);
+        return myList;
+    }
+
 }
