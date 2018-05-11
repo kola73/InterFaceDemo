@@ -1,9 +1,6 @@
 package com.imooc.server;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -69,4 +66,15 @@ public class MyGetMethod {
         return myList;
     }
 
+    /*
+    第二种实现方式：url=ip:port/get/with/param/1/3
+     */
+    @RequestMapping(value = "/get/with/param/{start}/{end}")
+    public Map getWithParam2(@PathVariable Integer start, @PathVariable Integer end) {
+        Map<String, Integer> myList = new HashMap<>();
+        myList.put("鸡蛋", 1);
+        myList.put("牛奶", 2);
+        myList.put("苹果", 3);
+        return myList;
+    }
 }
