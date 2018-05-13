@@ -1,6 +1,12 @@
 package com.imooc.config;
 
 //配置文件（这些做完以后页面就有了，可以启动springboot后进行访问：http://localhost:9999/swagger-ui.html）
+/*
+配置swaggerui
+1，导入2个jar包
+2，配置文件(config目录下)
+3，给swagger加方法(在原来方法基础上加上ApiOperation等：  @ApiOperation(value = "通过这个方法可以获取cookies", httpMethod = "GET"))
+ */
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
