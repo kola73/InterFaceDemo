@@ -6,6 +6,7 @@ package com.imooc.config;
 1，导入2个jar包
 2，配置文件(config目录下)
 3，给swagger加方法(在原来方法基础上加上ApiOperation等：  @ApiOperation(value = "通过这个方法可以获取cookies", httpMethod = "GET"))
+访问：http://localhost:9999/swagger-ui.html#/
  */
 
 import org.springframework.context.annotation.Bean;
@@ -23,7 +24,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class SwaggerConfig {
     @Bean
-//    Docker是一个开源的引擎，可以轻松的为任何应用创建一个轻量级的、可移植的、自给自足的容器。
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
