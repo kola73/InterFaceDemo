@@ -1,4 +1,4 @@
-package com.imooc.config;
+package com.imooc.server;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
