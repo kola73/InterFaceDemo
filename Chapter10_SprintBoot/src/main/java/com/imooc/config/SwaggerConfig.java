@@ -30,7 +30,7 @@ public class SwaggerConfig {
 //                配置访问路径并选择它
                 .pathMapping("/")
                 .select()
-//              路径（/.* ：匹配server里面的内容）
+//              正则匹配，匹配路径（/.* ：匹配server里面的内容）
                 .paths(PathSelectors.regex("/.*"))
                 .build();
 
