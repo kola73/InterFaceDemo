@@ -64,7 +64,7 @@ public class MyCookies {
         String uri = bundle.getString("test.get.with.cookies");
         HttpGet get = new HttpGet(this.url + uri);
         DefaultHttpClient httpClient = new DefaultHttpClient();
-//        设置cookies信息
+//        设置cookies信息并执行请求
         httpClient.setCookieStore(store);
         HttpResponse response = httpClient.execute(get);
 //        获取响应状态码

@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @RestController
 @Api(value = "/", description = "这是我的POST请求")
+// 这个加了以后下面所有方法前面必须加一个v1
 @RequestMapping(value = "/v1")
 public class MyPostMethod {
     //这个变量是用来装我们cookies信息的
@@ -40,8 +41,8 @@ public class MyPostMethod {
 //        验证cookies是否合法
         Cookie[] cookies = request.getCookies();
         for (Cookie cookie : cookies) {
-            if (cookie.getName() == "login" && cookie.getValue() == "true"
-                    && user.getAge() == "18" && user.getSex() == "man" && user.getName() == "kola") {
+            if (cookie.getName().equals("login")&& cookie.getValue().equals("true")
+                    && user.getAge().equals("18" )&& user.getSex().equals("man") && user.getName().equals("kola")) {
                 user1 = new User();
                 user1.setSex("man");
                 user1.setAge("18");

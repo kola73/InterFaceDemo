@@ -7,15 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Chapter10_SprintBoot" />
+        <module name="Chapter11_MybatisAndLogback" />
         <module name="Chapter5_TestNG" />
         <module name="Chapter6_ExtentReport" />
         <module name="Chapter7_Moco" />
-        <module name="Chapter9_extentreport" />
         <module name="Chapter9_Httpclient" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Chapter10_SprintBoot" target="1.8" />
+      <module name="Chapter11_MybatisAndLogback" target="1.8" />
       <module name="Chapter5_TestNG" target="1.8" />
       <module name="Chapter6_ExtentReport" target="1.6" />
       <module name="Chapter7_Moco" target="1.8" />

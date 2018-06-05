@@ -15,6 +15,7 @@
         <module>Chapter9_Httpclient</module>
         <module>Chapter6_ExtentReport</module>
         <module>Chapter10_SprintBoot</module>
+        <module>Chapter11_MybatisAndLogback</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

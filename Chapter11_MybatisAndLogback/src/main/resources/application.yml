@@ -1,0 +1,17 @@
+server:
+  port: 8888
+logging:
+  path: logs
+  file: mylogs.log
+spring:
+  application:
+    name: myTest
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.236.128:3306/interface
+    username: kola
+    password: 123456
+  mybatis:
+    type-aliases-package: com.imooc.model
+    mapper-locations:
+      - mapper/*
